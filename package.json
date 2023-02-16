@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "prisma": "^4.10.1",
+    "ts": "^0.2.2",
+    "typescript": "^4.9.5",
+    "yarn": "^1.22.19"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "local": "ts-node-dev --no-notify --respawn --transpile-only --exit-child --watch src src/app.ts",
+    "dev": "yarn run compile && node build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "shx rm -rf build/ && tsc"
+  },
+  "license": "MIT"
+}
